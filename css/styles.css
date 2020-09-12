@@ -1,0 +1,295 @@
+body {
+    background: lightblue;
+    display: inline-flexbox;
+}
+
+* {
+    box-sizing: border-box;
+}
+   
+
+.font {
+    font-family: "Century Gothic", CenturyGothic, sans-serif;
+}
+
+/*** Menu Tiles ***/
+#menu-tile, #specials-tile, #map-tile {
+    height: 250px;
+    width:100%;
+    margin-bottom: 15px;
+    position: relative;
+    border: 2px solid rgb(11, 95, 95);
+    overflow: hidden;
+}
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#menu-tile {
+    background: url('../css/menu.jpg') no-repeat;
+    background-position: center;
+}
+#specials-tile {
+    background: url(../css/specials.jpg) no-repeat;
+    background-position: center;
+}
+
+#menu-tile span, #specials-tile span, #map-tile span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6 em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .8;
+}
+
+/**** For Desktop ****/
+@media only screen and (min-width: 768px)
+{
+.col-1 {width: 8.33%}
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+}
+
+/*** For Mobile Phones ***/
+
+[class*="col-"] {
+    width: 100%;
+}
+
+
+/*** for Tablets ***/
+@media only screen and (min-width: 600px)
+{
+.col-s-1 {width: 8.33%}
+.col-s-2 {width: 16.66%}
+.col-s-3 {width: 25%}
+.col-s-4 {width: 33.33%}
+.col-s-5 {width: 41.66%}
+.col-s-6 {width: 50%}
+.col-s-7 {width: 58.33%}
+.col-s-8 {width: 66.66%}
+.col-s-9 {width: 75%}
+.col-s-10 {width: 83.33%}
+.col-s-11 {width: 91.66%}
+.col-s-12 {width: 100%}
+}
+
+.row {
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/**Header**/
+#header-nav {
+    background: rgb(176, 233, 176);
+    border-radius: 0;
+    border: 0;
+}
+
+#logo-img {
+    background: url('CuppyBunnyLogo2.PNG') no-repeat;
+    width: 150px;
+    height: 150px;
+   margin: 5px 5px 5px 0;
+}
+
+.navbar-brand {
+    padding-top:25px;
+}
+
+.navbar-brand h1 
+{
+font-family: "Ink Free", InkFree, sans-serif;
+    color: rgb(36, 34, 150);
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #206;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+.navbar-brand p 
+{
+    font-family: "Courier New", CourierNew, sans-serif;
+    color: rgb(155, 40, 190);
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.navbar-brand p span {
+    vertical-align: middle;
+}
+
+#nav-list {
+    margin-top: 10px;
+}
+
+#nav-list a {
+    color: rgb(204, 36, 106);
+    text-align: center;
+}
+
+#nav-list a:hover {
+    background: rgb(26, 129, 197);
+}
+
+#chicken{
+    position: relative;
+    overflow:hidden;
+    background: rgb(181, 190, 199);
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid black;
+    border-right: none;
+
+}
+
+.chicken
+{
+background-color:lightcyan;
+width: 60px;
+height: 30px;
+border: 2px solid black;
+text-align: center;
+position: absolute;
+top:0;
+right: 0;
+
+clear: left;
+overflow: hidden;
+border-top: none;
+border-right: none;
+}
+
+
+#beef{
+    position: relative;
+    overflow: hidden;
+    background: rgb(181, 190, 199);
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+
+.beef
+{
+background-color:lightsteelblue;
+width: 60px;
+height: 30px;
+border: 2px solid black;
+text-align: center;
+position: absolute;
+top:0;
+right: 0;
+
+clear: left;
+overflow: hidden;
+border-top: none;
+border-right: none;
+}
+
+
+#sushi{
+    position: relative;
+    overflow: hidden;
+    background:rgb(181, 190, 199);
+    margin: 20px auto;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+.sushi
+{
+background-color:lightpink;
+width: 60px;
+height: 30px;
+border: 2px solid black;
+text-align: center;
+position: absolute;
+top:0;
+right: 0;
+clear: left;
+overflow: hidden;
+border-top: none;
+border-right: none;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0px;
+    border: 1px solid purple;
+}
+
+.jumbotron {
+    background-image: url("unsplash.jpg");
+    background-size: 100% 100%;
+    font-family: "Ink Free", InkFree, sans-serif;
+    color: rgb(210, 228, 248);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #206
+  }
+
+  
+
+  /* FOOTER */
+.panel-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 30px;
+    background-color: rgb(203, 230, 238);
+    border-top: 0;
+  }
+  .panel-footer div.row {
+    margin-bottom: 35px;
+  }
+  #hours, #address {
+    line-height: 2;
+  }
+  #hours > span, #address > span {
+    font-size: 1.3em;
+  }
+  #address p {
+    color: #557c3e;
+    font-size: .8em;
+    line-height: 1.8;
+  }
+  #testimonials {
+    font-style: italic;
+  }
+  #testimonials p:nth-child(2) {
+    margin-top: 25px;
+  }
+  /* END FOOTER */
+  
+
+
+    
